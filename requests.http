@@ -1,0 +1,31 @@
+### Health check
+GET localhost:3001/
+Authorization: Bearer oat_Mg.QWNuMTJMNGZGUkNCV1hkMkIxUEJ1U3FjN2xHcTdPSGRqVmQ1MVdVRTIzNTExNDMxNDM
+
+### Get users
+GET localhost:3001/users
+Authorization: Bearer oat_Mg.QWNuMTJMNGZGUkNCV1hkMkIxUEJ1U3FjN2xHcTdPSGRqVmQ1MVdVRTIzNTExNDMxNDM
+
+### Get user
+GET localhost:3001/users/1
+Authorization: Bearer oat_Mg.QWNuMTJMNGZGUkNCV1hkMkIxUEJ1U3FjN2xHcTdPSGRqVmQ1MVdVRTIzNTExNDMxNDM
+
+### Create user
+POST localhost:3001/users
+Content-Type: application/json
+Authorization: Bearer oat_Mg.QWNuMTJMNGZGUkNCV1hkMkIxUEJ1U3FjN2xHcTdPSGRqVmQ1MVdVRTIzNTExNDMxNDM
+
+{
+  "username": "elie",
+  "email": "test1@test.fr",
+  "password": "toto"
+}
+
+### Login
+POST localhost:3001/auth
+Content-Type: application/json
+
+{
+  "email": "test@test.fr",
+  "password": "toto"
+}
